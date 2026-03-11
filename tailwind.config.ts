@@ -53,7 +53,8 @@ export default {
         },
         sage: {
           DEFAULT: "hsl(var(--sage))",
-          dark: "hsl(var(--sage-dark))",
+          light: "hsl(var(--sage-light))",
+          bg: "hsl(var(--sage-bg))",
         },
       },
       borderRadius: {
@@ -66,14 +67,9 @@ export default {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
-        "fade-out": {
-          from: { opacity: "1" },
-          to: { opacity: "0" },
-        },
       },
       animation: {
         "fade-in": "fade-in 300ms ease-in-out",
-        "fade-out": "fade-out 300ms ease-in-out",
       },
     },
   },
