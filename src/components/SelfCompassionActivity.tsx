@@ -32,6 +32,15 @@ const SelfCompassionActivity = () => {
   const [step3Labeled, setStep3Labeled] = useState(false);
   const [selectedAction, setSelectedAction] = useState<string | null>(null);
 
+  const resetActivity = () => {
+    setStep1Repeated(false);
+    setStep2Acknowledged(false);
+    setThought("");
+    setStep3Labeled(false);
+    setSelectedAction(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <div className="max-w-lg mx-auto px-5 py-8 pb-16">
