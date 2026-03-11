@@ -233,6 +233,7 @@ const SelfCompassionActivity = () => {
 
           <button
             disabled={!selectedAction}
+            onClick={resetActivity}
             className="action-button disabled:opacity-40"
           >
             Continue Practice
